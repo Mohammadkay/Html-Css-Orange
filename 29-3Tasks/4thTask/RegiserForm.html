@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regiser Form</title>
+    <link rel="stylesheet" href="Assist/RegisterForm.css">
+  </head>
+
+  <body>
+    <h1>Regiser Form</h1>
+
+    <form>
+      <fieldset>
+        
+        <legend>Personal details</legend>
+
+        <label for="Fname" class="labelform">First Name</label>
+        <input id="Fname" type="text" />
+
+        <br />
+        <br />
+
+        <label for="lname" class="labelform">Last Name</label>
+        <input id="lname" type="text" />
+
+        <br />
+        <br />
+
+        <label for="Email" class="labelform">Email Addres</label>
+        <input id="Email" type="email" />
+        <br>
+        <br>
+   
+        <label for="G"class="labelform">Gender</label>
+        <input type="radio" name="Gender" value="Male" id="Male" />
+        <label class="Glabel" for="Male">Male</label >
+        <input type="radio" name="Gender" value="Female" id="Female" />
+        <label class="Glabel" for="Female">Female</label>
+      </fieldset>
+      <fieldset>
+        <legend>City</legend>
+
+        <label class="City" for="City">City</label>
+        <select  id="City">
+          <option>Amman</option>
+          <option>Zarga</option>
+          <option>Irbid</option>
+        </select>
+      </fieldset>
+      <input class="submit" type="submit" value="Subscibe" />
+    </form>
+  </body>
+</html>

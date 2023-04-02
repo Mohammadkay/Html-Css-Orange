@@ -1,0 +1,21 @@
+h2{
+    background-color: blanchedalmond;
+   
+           }
+           img{
+               float: right;
+           }
+           .CNum{
+               color: rgba(144, 7, 7, 0.973);
+               text-decoration:underline;
+         
+           }
+           .UI{
+               color: green;
+           }
+           .graybackground{
+               background-color: rgba(155, 154, 154, 0.399);
+           }
+           .RedText{
+   color: red;
+           }

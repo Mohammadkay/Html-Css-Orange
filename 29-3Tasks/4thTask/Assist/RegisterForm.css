@@ -1,0 +1,20 @@
+Form {
+  width: 30%;
+  margin-left: 30%;
+}
+.labelform {
+  width: 90px;
+  display: inline-block;
+  text-align: left;
+  padding: 0px 30px;
+}
+.submit {
+  margin-left: 43%;
+  margin-top: 3%;
+}
+.City {
+  margin-left: 20%;
+}
+fieldset {
+  background-color: #ffffce;
+}

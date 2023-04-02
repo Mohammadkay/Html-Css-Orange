@@ -1,0 +1,15 @@
+
+.tableCaption{
+    text-align: left;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+th, td {
+border: 1px dotted black;}
+a{
+    color: #551A8B;
+}
+img{
+    width: 240px;
+}
+
