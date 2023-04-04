@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-indent: 50px;
+}
+.conianer {
+  height: 500px;
+  width: 900px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas:
+    "A A . B  "
+    "C article article article "
+    "C article article article ";
+  row-gap: 20px;
+  column-gap: 30px;
+}
+.conianer div {
+  font-size: 30px;
+  background-color: gray;
+  color: black;
+  padding: 20px;
+}
+.A {
+  grid-area: A;
+}
+.B {
+  grid-area: B;
+}
+.C {
+  grid-area: C;
+}
+article {
+  border-radius: 10px;
+  grid-area: article;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(2, 100px);
+  grid-template-areas:
+    ". section section section"
+    ". section section section";
+  justify-content: end;
+  padding-top: 40px;
+  padding-right: 30px;
+}
+article div {
+  background-color: aliceblue !important;
+}
+.D {
+  grid-area: D;
+}
+.E {
+  grid-area: E;
+}
+.section {
+  grid-area: section;
+}
+.radues {
+  border-radius: 10px;
+}

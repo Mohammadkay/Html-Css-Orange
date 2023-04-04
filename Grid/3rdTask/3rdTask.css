@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 25px;
+}
+.grid {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.countaner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  height: 100vh;
+}
+.one {
+  grid-area: 1/1 /2/5;
+
+  background-color: #ff9b6d;
+}
+.two {
+  grid-area: 2/1/6/2;
+  background-color: #ffd37c;
+}
+.three {
+  grid-area: 2/2 /6/5;
+  background-color: #c8d878;
+}
+.four {
+  grid-area: 6/1/7/3;
+  background-color: #7dbca9;
+}
+.five {
+  grid-area: 6/3/7/5;
+  background-color: #87ceeb;
+}

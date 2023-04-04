@@ -1,0 +1,126 @@
+body {
+  border: 20px solid white;
+  margin: 0;
+  box-sizing: border-box;
+}
+.CenterText {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.contaner {
+  transform: translate(10px, 10px);
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 14vh);
+  grid-template-areas:
+    "header header header  header   header "
+    "aside section section section  section  "
+    "aside section section section  section   "
+    "aside section section section  section   "
+    "aside section section section  section   "
+    "aside footer  footer  footer   footer    ";
+}
+.header {
+  display: grid;
+  grid-area: header;
+  background-color: #ff9b6d;
+  grid-template-columns: repeat(9, calc(70% / 9));
+  grid-template-rows: 1fr;
+  grid-template-areas: "Logo nav nav nav nav nav nav nav nav";
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+}
+.Logo {
+  grid-area: Logo;
+  background-color: #ffd37c;
+  height: 7vh;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: #ffd37c;
+  height: 7vh;
+  display: grid;
+  align-content: center;
+  text-indent: 11px;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #a9ba4f;
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: repeat(3, 30%);
+  grid-template-areas:
+    "News"
+    "Event" "contant";
+  gap: 10px;
+  align-content: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.News {
+  grid-area: News;
+  background-color: #ceea41;
+}
+.Event {
+  grid-area: Event;
+  background-color: #ceea41;
+}
+.contant {
+  grid-area: contant;
+  background-color: #ceea41;
+}
+
+.section {
+  grid-area: section;
+  background-color: #7dbca9;
+  display: grid;
+  grid-template-rows: 90%;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-areas: "First Second Third";
+  justify-content: space-around;
+  align-content: center;
+}
+.First {
+  grid-area: First;
+  background-color: #8de1ca;
+}
+.Second {
+  grid-area: Second;
+  background-color: #8de1ca;
+}
+.Third {
+  grid-area: Third;
+  background-color: #8de1ca;
+}
+
+.footer {
+    
+        grid-area: footer;
+        display: grid;
+        background-color: #87CEEB;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "brain brain brain FotLogo";
+        justify-content: space-around;
+        gap: 10px;
+        align-items: center;
+    
+}
+.brain {
+  grid-area: brain;
+  background-color: #8A9DC7;
+  height: 7vh;
+  display: grid;
+  align-items: center;
+}
+.FotLogo {
+  grid-area: FotLogo;
+  background-color: #8A9DC7;
+  height: 7vh;
+}
